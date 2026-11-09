@@ -1,0 +1,12 @@
+.searchResultsContainer {
+  background-color: var(--border);
+  color: var(--text-primary);
+  border-radius: 15px;
+  width: 500px;
+  padding: 20px 0px 20px 0px;
+}
+
+.searchResultsHeader {
+  padding: 10px;
+  letter-spacing: 1px;
+}
