@@ -1,0 +1,6 @@
+.container {
+  display: flex;
+  background-color: var(--bg-secondary);
+  justify-content: space-around;
+  padding: 30px 0px;
+}

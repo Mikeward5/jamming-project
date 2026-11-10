@@ -1,6 +1,14 @@
 import styles from "./Track.module.css";
 
-function Track({ trackId, trackName, trackArtist, trackAlbum }) {
+function Track({
+  trackId,
+  trackName,
+  trackArtist,
+  trackAlbum,
+  addTrack,
+  isPlayList,
+  removeTrack,
+}) {
   return (
     <div className={styles.trackCard}>
       <img src="" />
@@ -10,7 +18,11 @@ function Track({ trackId, trackName, trackArtist, trackAlbum }) {
           {trackAlbum} by {trackArtist}
         </p>
       </div>
-      <button>+</button>
+      {isPlayList ? (
+        <button onClick={() => removeTrack(trackId)}>-</button>
+      ) : (
+        <button onClick={() => addTrack(trackId)}>+</button>
+      )}
     </div>
   );
 }
