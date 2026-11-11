@@ -1,12 +1,69 @@
-.searchResultsContainer {
-  background-color: var(--border);
+.playlistContainer {
+  background-color: var(--bg-card);
   color: var(--text-primary);
+
+  border: 1px solid var(--border);
   border-radius: 15px;
-  width: 500px;
-  padding: 20px 0px 20px 0px;
+
+  flex: 1;
+  min-width: 0;
+  max-width: 500px;
+
+  padding: 20px;
 }
 
 .searchResultsHeader {
-  padding: 10px;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
   letter-spacing: 1px;
+  border-bottom: 1px solid var(--border);
+}
+
+.playlistForm {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.playlistInput {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+
+  background-color: var(--bg-input);
+  color: var(--text-primary);
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  font-size: 20px;
+  outline: none;
+}
+
+.playlistInput:focus {
+  border-color: var(--accent-primary);
+}
+
+.spotifybutton {
+  background-color: var(--spotify-green);
+  color: var(--text-primary);
+
+  padding: 12px 30px;
+  border: none;
+  border-radius: 15px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  align-self: center;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.spotifybutton:hover {
+  background-color: var(--spotify-bright);
 }
